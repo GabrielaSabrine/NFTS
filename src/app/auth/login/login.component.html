@@ -1,0 +1,73 @@
+
+<div class="body">
+  <div class="contact" tabindex="0">
+    <div class="container">
+      <a href="./"
+        ><img class="logo" src="assets/minilogo.png" alt="Logo da aplicação"
+      /></a><br>
+      <br />
+      <h2 class="login">Login</h2>
+      <br />
+      <br />
+      <p>
+        Novo no site?
+        <a
+          routerLink="https://www.ledgerinsights.com/wp-content/uploads/2022/06/web3-blockchain-810x524.jpg"
+          ><button class="btn-link">Cadastre-se</button></a
+        >
+      </p>
+      <form #loginForm="ngForm" class="m-1" (ngSubmit)="onSubmit()">
+        <br />
+        <div class="mb-5">
+          <input
+            #emailInp="ngModel"
+            [(ngModel)]="email"
+            id="email"
+            name="email"
+            type="email"
+            class="form-control inputLogin"
+            placeholder="Seu email *"
+            required
+          />
+          <small
+            *ngIf="emailInp.touched && emailInp.invalid"
+            class="text-danger"
+            >O campo é inválido</small
+          >
+        </div>
+        <br />
+        <div class="mb-5">
+          <input
+            #senhaInp="ngModel"
+            [(ngModel)]="senha"
+            id="senha"
+            name="senha"
+            type="password"
+            class="form-control inputLogin"
+            placeholder="Sua senha *"
+            required
+          />
+          <small
+            *ngIf="senhaInp.touched && senhaInp.invalid"
+            class="text-danger"
+            >O campo é inválido</small
+          >
+          <br />
+          <button class="btn-link">Esqueceu sua senha?</button>
+        </div>
+        <br />
+        <button type="submit" class="btnLogin" [disabled]="loginForm.invalid">
+          Login
+        </button>
+      </form>
+    </div>
+    <br /><br />
+    <!-- <div>
+      <a 
+        ><img class="foto"
+          src="assets/login.jpg"
+          alt="Logo da aplicação"
+      /></a>
+    </div> -->
+ </div>
+</div>

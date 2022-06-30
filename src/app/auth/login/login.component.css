@@ -1,0 +1,89 @@
+.body{
+
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        border: 3px solid #f1f1f1;
+        
+}
+
+
+.logo{
+
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+
+.container{
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   box-sizing : border-box; 
+   max-width : 520px; 
+   margin : 0px 179.358px 0px 179.34px; 
+   height : 598.455px; 
+
+ 
+}
+
+.inputLogin{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    
+}
+
+.btnLogin{
+    background-color: #3A0542;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.login{
+    color: #640871;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputLogin:focus, input:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+.btn-link{
+    width: auto;
+    padding: 3px 3px;
+    background-color: #640871;
+    color: #f1f1f1;
+    border-radius: 10px;
+}
+
+.contact{
+box-sizing : border-box; 
+padding : 80px 16px 16px; 
+flex-grow : 0; 
+flex-shrink : 1; 
+background : rgb(0, 5, 4) none repeat scroll 0% 0% / auto padding-box border-box; 
+display : block; 
+background-color : rgb(0, 5, 4); 
+color : rgb(255, 255, 255); 
+position : relative; }
+
