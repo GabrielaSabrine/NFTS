@@ -1,9 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 
-interface MenuItem {
-  link: string;
-  label: string;
-}
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
@@ -16,30 +12,5 @@ export class NavbarComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  itensMenu: MenuItem[] = [
-    {
-      link: '/home',
-      label: 'Página inicial',
-    },
-    {
-      link: '/chamados',
-      label: 'Chamados',
-
-    },
-    {
-      link: '/clientes',
-      label: 'Clientes',
-
-    },
-    {
-      link: '/tecnicos',
-      label: 'Técnicos',
-
-    },
-    {
-      link: '/manual-do-software',
-      label: 'Manual do Software',
-
-    }]
 
 }

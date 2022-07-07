@@ -1,13 +1,13 @@
-<div class="container">
+<div class="body">
   <mat-grid-list cols="1" >
-    <mat-grid-tile class="divs" *ngFor="let curso of cursos">
+    <mat-grid-tile class="container" *ngFor="let curso of cursos">
       <mat-card class="div">
         <mat-card-header >
           <P>id:{{curso.id}}</P>
           <mat-card-title>{{curso.nome}}</mat-card-title>
           <mat-card-subtitle>{{curso.duracao}}</mat-card-subtitle>
         </mat-card-header>
-        <img class="img" mat-card-image src="{{curso.imagem}}">
+        <img class="div" mat-card-image src="{{curso.imagem}}">
         <mat-card-content>{{curso.descricao}}</mat-card-content>
         <mat-card-actions class="do">
           <p> valor {{curso.valor.toString() | wrap: 'R$':'BRL'}}</p>
