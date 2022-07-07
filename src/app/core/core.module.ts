@@ -5,7 +5,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MatIconModule } from '@angular/material/icon';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MaterialModule } from '../shared/material/material.module';
-
+import {RouterModule} from '@angular/router';
 
 
 @NgModule({
@@ -20,6 +20,8 @@ import { MaterialModule } from '../shared/material/material.module';
     FormsModule,
     ReactiveFormsModule,
     MaterialModule,
+    RouterModule
+    
   ],
    
   exports: [NavbarComponent]

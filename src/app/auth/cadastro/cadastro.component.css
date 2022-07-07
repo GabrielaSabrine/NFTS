@@ -1,95 +1,56 @@
-.body {
-    background-color: #EDEDED;
+.body{
+
     height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+        border: 3px solid #f1f1f1;
+        
 }
 
-img {
-    margin-left: 12px;
-    border-radius: 0 10px 10px 0;
+.container{
+   justify-content: center;
+   justify-items: center;
+   align-items: center;
+   box-sizing : border-box; 
+   max-width : 520px; 
+   margin : 100px 400px 10px 400px; 
+   height : 598.455px; 
+}
+ 
+
+.input{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    
 }
 
-.titulo {
-    color: #1290CB;
-    font-weight: bold;
+button:hover {
+    opacity: 0.8;
 }
 
-.inputCadastro input {
-    width: 380px;
+.btn{
+    color: #640871;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #3A0542;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
     border: none;
-    border-bottom: 2px solid rgba(74, 74, 74, 0.434);
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
 }
 
-.inputCadastro input:focus,
-.inputCadastro input:active {
-    border-color: #1290CB;
-}
-
-.inputCadastro input:focus {
+.inputLogin:focus, input:focus {
     box-shadow: 0 0 0 0;
     outline: 0;
-}
-
-.cont2 {
-    background-color: #ffffff;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 0;
-}
-
-.btnGoogle {
-    font-size: 18px;
-    font-weight: 600;
-    background-color: transparent;
-    border-radius: 5px;
-    color: #1290CB;
-    border: 2px solid #1290CB;
-    width: 380px;
-    height: 48px;
-}
-
-.btnGoogle:hover {
-    color: #ffff;
-    background-color: #1290CB;
-}
-
-.btnCadastro {
-    font-size: 18px;
-    font-weight: 600;
-    background-color: #1290CB;
-    color: #ffffff;
-    border-radius: 5px;
-    border: 2px solid #1290CB;
-    width: 380px;
-    height: 48px;
-}
-
-.btnCadastro:hover {
-    color: #1290CB;
-    background-color: transparent;
-}
-
-.line::before {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 164px;
-    bottom: 10px;
-    left: 38px;
-    border-radius: 8px;
-    background: rgba(74, 74, 74, 0.434);
-}
-
-.line::after {
-    content: '';
-    position: absolute;
-    height: 2px;
-    width: 164px;
-    bottom: 10px;
-    left: -178px;
-    border-radius: 8px;
-    background: rgba(74, 74, 74, 0.434);
 }
 
 .ofusc {

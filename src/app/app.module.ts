@@ -5,14 +5,16 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AuthModule } from './auth/auth.module';
 import { SharedModule } from './shared/shared.module';
-import { CursosModule } from './cursos/cursos.module';
 import { AuthRoutingModule } from './auth/auth-routing.module';
 import { HotToastModule } from '@ngneat/hot-toast';
 import { CoreModule } from './core/core.module';
+import { CursosComponent } from './cursos/cursos.module';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,10 +23,8 @@ import { CoreModule } from './core/core.module';
     CoreModule,
     BrowserAnimationsModule,
     SharedModule,
-    CursosModule, 
     AuthRoutingModule, HotToastModule.forRoot(),
-   
-
+    CursosComponent,
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { User } from 'src/app/core/models/user';
 
 @Component({
   selector: 'app-login',
@@ -8,13 +9,15 @@ import { Component, OnInit } from '@angular/core';
 export class LoginComponent implements OnInit {
   email: string = '';
   senha: string = '';
+  hide = true;
+  user: User = {} as User
 
+
+
+  constructor() { }
   onSubmit() {
     alert(`Bem-vindo(a) ${this.email}`);
   }
-
-  constructor() { }
-
   ngOnInit(): void {
   }
 

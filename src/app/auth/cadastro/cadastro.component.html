@@ -1,12 +1,12 @@
-<mat-grid-list cols="2" style="padding-top: 3%;">
+<mat-grid-list cols="2" style="padding-top: 0%;">
     <mat-grid-tile rowspan="1">
-        <img class="foto1" [src]="imagem" alt="">
+        <img class="foto" [src]="imagem" alt="">
     </mat-grid-tile>
 
 
     
     <mat-grid-tile rowspan="1">
-        <div class="form-wrapper container">
+        <div class="container">
             <h2><strong>Cadastro</strong></h2>
 
             <form #form="ngForm">
@@ -15,13 +15,6 @@
                     <input name="nome" matInput [(ngModel)]="user.nome" required />
                     <mat-error ng-show="form.nome.$error.required">Campo obrigatório</mat-error>
                     <mat-icon matPrefix>person</mat-icon>
-                </mat-form-field>
-
-                <mat-form-field appearance="fill">
-                    <mat-label>NICK</mat-label>
-                    <input name="NICK" matInput [(ngModel)]="user.nick" required />
-                    <mat-error  ng-show="form.NICK.$error.required">Nick obrigatório</mat-error>
-                    <mat-icon matPrefix>pin_drop</mat-icon>
                 </mat-form-field>
                 
                 <mat-form-field appearance="fill">
@@ -41,7 +34,7 @@
                     </mat-form-field>
                 </div>
             
-                <button type="submit" class="btnLoginBG" mat-raised-button (click)="onSubmit()" [disabled]="form.invalid">
+                <button type="submit" class="btn" mat-raised-button (click)="onSubmit()" [disabled]="form.invalid">
                     Cadastrar
                 </button>
             </form>

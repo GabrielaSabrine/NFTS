@@ -1,7 +1,17 @@
-<mat-toolbar class="cor">
-    <button mat-icon-button class="icon" aria-label=" icon-button with menu icon">
-      <mat-icon>menu</mat-icon>
-    </button>
-    <span>NFTs</span>
-    <span class="spacer"></span> 
+
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <button mat-button [matMenuTriggerFor]="menu" mat-icon-button class="button" >
+      <mat-menu #menu="matMenu">
+          <button mat-menu-item [routerLink]="['/src/app/cursos/lista']">Cursos</button>
+          <button mat-menu-item [routerLink]="['/src/app/auth/login']">Login</button>
+          <button mat-menu-item [routerLink]="['/src/app/auth/cadastro']">Cadastro</button>
+          <button mat-menu-item [routerLink]="['/src/app/cursos/adicao']">Adicionar</button>
+        </mat-menu>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>
+        <button mat-button [routerLink]="['']">NFTs</button></span>
+      <span class="A"></span>
+    </mat-toolbar-row>
   </mat-toolbar>

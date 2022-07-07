@@ -1,0 +1,111 @@
+<div class="body">
+<form #novoProdForm="ngForm" (ngSubmit)="onSubmit()" class="container">
+  <div class="mb">
+    <label for="nome">Nome do Curso</label>
+    <input
+      #nomeInp="ngModel"
+      id="nome"
+      type="text"
+      name="nome"
+      [(ngModel)]="cursos.nome"
+      class="form-control"
+      required
+    />
+    <small *ngIf="nomeInp.touched && nomeInp.invalid" class="text-danger"
+      >O campo é inválido</small
+    >
+  </div>
+  <div class="mb">
+    <label for="imagem">Imagem em url</label>
+    <input
+      #imgInp="ngModel"
+      id="imagem"
+      type="url"
+      name="imagem"
+      [(ngModel)]="cursos.imagem"
+      class="form-control"
+      required
+    />
+  </div>
+  <div class="mb">
+    <label for="curso">Categoria do curso</label>
+    <input
+      id="cruso"
+      type="text"
+      name="preco"
+      [(ngModel)]="cursos.curso"
+      class="form-control"
+      required
+    />
+    <small *ngIf="descInp.touched && descInp.invalid" class="text-danger"
+      >O campo é inválido</small
+    >
+  </div>
+  <div class="mb">
+    <label for="duracao">Duração do curso</label>
+    <input
+      #descInp="ngModel"
+      id="diracao"
+      type="text"
+      name="duracao"
+      [(ngModel)]="cursos.duracao"
+      class="form-control"
+      required
+    />
+    <small *ngIf="descInp.touched && descInp.invalid" class="text-danger"
+      >O campo é inválido</small
+    >
+  </div>
+  <div class="mb">
+    <label for="descricao">Descrição do curso</label>
+    <input
+      #descInp="ngModel"
+      id="descricao"
+      type="text"
+      name="descricao"
+      [(ngModel)]="cursos.descricao"
+      class="form-control"
+      required
+    />
+    <small *ngIf="descInp.touched && descInp.invalid" class="text-danger"
+      >O campo é inválido</small
+    >
+  </div>
+  <div class="mb">
+    <label for="valor">Preço</label>
+    <input #precoInp="ngModel" id="valor" type="valor" name="preco" [(ngModel)]="cursos.valor" class="form-control" required />
+    <small *ngIf="precoInp.touched && precoInp.invalid" class="text-danger">O campo é inválido</small>
+</div>
+  <div class="form-check form-switch">
+    <label for="emPromocao" class="form-check-label">Em promoção?</label>
+    <input
+      id="emPromocao"
+      type="checkbox"
+      class="form-check-input"
+      name="emPromocao"
+      [(ngModel)]="cursos.emPromocao"
+    />
+  </div>
+  <div *ngIf="cursos.emPromocao" class="mb-3">
+    <label for="desconto">Desconto</label>
+    <input
+      #descontoInp="ngModel"
+      id="desconto"
+      type="number"
+      name="desconto"
+      [(ngModel)]="cursos.desconto"
+      class="form-control"
+      min="0"
+      max="1"
+      step=".01"
+      required
+    />
+    <small
+      *ngIf="descontoInp.touched && descontoInp.invalid"
+      class="text-danger"
+      >O campo é inválido</small
+    >
+  </div>
+  <button (click)="onSubmit()" class= "btn" mat-stroked-button>Adicionar</button>
+</form>
+</div>

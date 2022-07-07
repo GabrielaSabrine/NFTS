@@ -1,0 +1,32 @@
+.body{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.container {
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    box-sizing : border-box;  
+    margin-top: 100px;
+    margin-left: 500px;
+}
+.input{
+    width: 100%;
+   
+    display: flex;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    box-shadow: 0 0 0 0;
+    outline: 0;
+}
+
+.btn {
+  color: #640871;
+  background-color: #3a0542;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 10px;
+}

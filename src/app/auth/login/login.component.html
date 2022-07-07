@@ -2,7 +2,7 @@
 <div class="body">
   <div class="contact" tabindex="0">
     <div class="container">
-      <a href="./"
+      <a 
         ><img class="logo" src="assets/minilogo.png" alt="Logo da aplicação"
       /></a><br>
       <br />
@@ -13,7 +13,7 @@
         Novo no site?
         <a
           routerLink="https://www.ledgerinsights.com/wp-content/uploads/2022/06/web3-blockchain-810x524.jpg"
-          ><button class="btn-link">Cadastre-se</button></a
+          ><button class="btn">Cadastre-se</button></a
         >
       </p>
       <form #loginForm="ngForm" class="m-1" (ngSubmit)="onSubmit()">
@@ -45,7 +45,7 @@
             type="password"
             class="form-control inputLogin"
             placeholder="Sua senha *"
-            required
+            required 
           />
           <small
             *ngIf="senhaInp.touched && senhaInp.invalid"
@@ -53,21 +53,14 @@
             >O campo é inválido</small
           >
           <br />
-          <button class="btn-link">Esqueceu sua senha?</button>
+          <button (click)="onSubmit()" class="btn">Esqueceu sua senha?</button>
         </div>
         <br />
-        <button type="submit" class="btnLogin" [disabled]="loginForm.invalid">
+        <button type="submit" class="btnLogin" [disabled]="loginForm.invalid" [routerLink]="['']" (click)="onSubmit()">
           Login
         </button>
       </form>
     </div>
     <br /><br />
-    <!-- <div>
-      <a 
-        ><img class="foto"
-          src="assets/login.jpg"
-          alt="Logo da aplicação"
-      /></a>
-    </div> -->
  </div>
 </div>

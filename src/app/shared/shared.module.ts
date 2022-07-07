@@ -7,8 +7,7 @@ import { WrapPipe } from './pipe/wrap/wrap.pipe';
 
 @NgModule({
   declarations: [
-    PercentagePipe,
-    WrapPipe
+   
   ],
   imports: [
     CommonModule

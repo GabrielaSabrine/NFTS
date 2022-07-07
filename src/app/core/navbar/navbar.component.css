@@ -1,9 +1,15 @@
-.example-spacer {
-    flex: 1 1 auto;
-    
+
+.A {
+  flex: 1 1 auto;
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+  .mat-toolbar{
+    background-color: #3A0542;
+    color: white;
   }
 
-  .cor{
-    background-color: #3A0542;
-    color: #f1f1f1;
+  .matmenu{
+    color: #3A0542;
   }
